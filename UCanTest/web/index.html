@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+<body class="w3-container">
+
+<h2>Accordions</h2>
+<p>An accordion is used to show (and hide) content that is broken into sections:</p>
+
+<div class="w3-accordion w3-light-grey">
+  <button onclick="myFunction('Demo1')" class="w3-btn-block w3-left-align">Open Section 1</button>
+  <div id="Demo1" class="w3-accordion-content w3-container">
+    <h4>Section 1</h4>
+    <p>Some text..</p>
+  </div>
+  <button onclick="myFunction('Demo2')" class="w3-btn-block w3-left-align">Open Section 2</button>
+  <div id="Demo2" class="w3-accordion-content w3-container">
+    <h4>Section 2</h4>
+    <p>Some other text..</p>
+  </div>
+</div>
+
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
 </html>
