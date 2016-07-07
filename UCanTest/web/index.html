@@ -3,28 +3,23 @@
 <title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-
 <body class="w3-container">
 
-<h2>Accordions</h2>
-<p>An accordion is used to show (and hide) content that is broken into sections:</p>
+<h2>Clickable Dropdown</h2>
+<p>Click on the button to open the dropdown menu.</p>
 
-<div class="w3-accordion w3-light-grey">
-  <button onclick="myFunction('Demo1')" class="w3-btn-block w3-left-align">Open Section 1</button>
-  <div id="Demo1" class="w3-accordion-content w3-container">
-    <h4>Section 1</h4>
-    <p>Some text..</p>
-  </div>
-  <button onclick="myFunction('Demo2')" class="w3-btn-block w3-left-align">Open Section 2</button>
-  <div id="Demo2" class="w3-accordion-content w3-container">
-    <h4>Section 2</h4>
-    <p>Some other text..</p>
+<div class="w3-dropdown-click">
+  <button onclick="myFunction()" class="w3-btn">Button</button>
+  <div id="Demo" class="w3-dropdown-content w3-card-4">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
   </div>
 </div>
 
 <script>
-function myFunction(id) {
-    var x = document.getElementById(id);
+function myFunction() {
+    var x = document.getElementById("Demo");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
     } else {
@@ -35,3 +30,4 @@ function myFunction(id) {
 
 </body>
 </html>
+

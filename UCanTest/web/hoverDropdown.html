@@ -10,12 +10,35 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        
+        <script>
+            function myFunction() {
+                var x = document.getElementById("Demo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+        
     </head>
-    <body class="w3-container w3-content" style="max-width: 600px">
+    
+    <body class="w3-container">
         <div class="w3-padding-16 w3-dropdown-hover" style="margin-left:250px">
             <div class="w3-btn w3-blue">Hover Me</div>
             <div class="w3-dropdown-content w3-light-grey">
                 <a href='http://www.facebook.com'>Facebook</a>
+                <a href='https://twitter.com/?lang=en'>Twitter</a>
+                <a href='https://uiu.ac.bd'>UIU</a>
+                <a href='https://www.youtube.com/watch?v=L5GwTfI_PD8'>Don't Click</a>
+            </div>
+        </div>
+        
+        <div class="w3-dropdown-click">
+            <button onclick="myFunction()" class="w3-btn">Button</button>
+            <div id="Demo" class="w3-dropdown-content w3-card-4">
+                 <a href='http://www.facebook.com'>Facebook</a>
                 <a href='https://twitter.com/?lang=en'>Twitter</a>
                 <a href='https://uiu.ac.bd'>UIU</a>
                 <a href='https://www.youtube.com/watch?v=L5GwTfI_PD8'>Don't Click</a>
